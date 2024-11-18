@@ -1,4 +1,15 @@
 {
   "name": "myapp",
-  "sourceRoot": "packages/myapp/src"
+  "sourceRoot": "packages/myapp/src",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "packages/myapp/dist",
+        "main": "packages/myapp/src/index.ts",
+        "tsConfig": "packages/myapp/tsconfig.lib.json"
+      }
+    }
+  }
 }
