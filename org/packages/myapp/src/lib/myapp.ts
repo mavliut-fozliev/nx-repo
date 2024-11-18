@@ -4,3 +4,5 @@ export function myapp(): string {
   console.log(util());
   return "myapp";
 }
+
+myapp();

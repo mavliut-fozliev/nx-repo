@@ -4,3 +4,5 @@ export function myappSwc(): string {
   console.log(myapp());
   return "myapp-swc";
 }
+
+myappSwc();
