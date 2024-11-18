@@ -1,0 +1,15 @@
+{
+  "name": "myapp-swc",
+  "sourceRoot": "packages/myapp-swc/src",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:swc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "packages/myapp-swc/dist",
+        "main": "packages/myapp-swc/src/index.ts",
+        "tsConfig": "packages/myapp-swc/tsconfig.lib.json"
+      }
+    }
+  }
+}

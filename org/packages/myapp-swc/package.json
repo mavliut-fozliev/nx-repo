@@ -7,22 +7,5 @@
   "type": "commonjs",
   "main": "./dist/src/index.js",
   "typings": "./dist/src/index.d.ts",
-  "private": true,
-  "nx": {
-    "sourceRoot": "packages/myapp-swc/src",
-    "targets": {
-      "build": {
-        "executor": "@nx/js:swc",
-        "outputs": [
-          "{options.outputPath}"
-        ],
-        "options": {
-          "outputPath": "packages/myapp-swc/dist",
-          "main": "packages/myapp-swc/src/index.ts",
-          "tsConfig": "packages/myapp-swc/tsconfig.lib.json"
-        }
-      }
-    },
-    "name": "myapp-swc"
-  }
+  "private": true
 }

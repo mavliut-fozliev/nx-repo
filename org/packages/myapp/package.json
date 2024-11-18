@@ -7,9 +7,5 @@
   "type": "commonjs",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
-  "private": true,
-  "nx": {
-    "sourceRoot": "packages/myapp/src",
-    "name": "myapp"
-  }
+  "private": true
 }
