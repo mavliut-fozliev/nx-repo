@@ -9,7 +9,9 @@
         "outputPath": "packages/myapp-swc/dist",
         "main": "packages/myapp-swc/src/index.ts",
         "tsConfig": "packages/myapp-swc/tsconfig.lib.json"
-      }
+      },
+      "dependsOn": ["^build"]
     }
-  }
+  },
+  "implicitDependencies": ["myapp"]
 }

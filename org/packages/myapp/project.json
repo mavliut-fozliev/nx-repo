@@ -9,7 +9,9 @@
         "outputPath": "packages/myapp/dist",
         "main": "packages/myapp/src/index.ts",
         "tsConfig": "packages/myapp/tsconfig.lib.json"
-      }
+      },
+      "dependsOn": ["^build"]
     }
-  }
+  },
+  "implicitDependencies": ["util"]
 }
