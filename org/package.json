@@ -18,5 +18,8 @@
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "chokidar": "^3.6.0"
+  }
 }
