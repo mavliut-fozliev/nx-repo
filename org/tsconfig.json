@@ -2,15 +2,5 @@
   "extends": "./tsconfig.base.json",
   "compileOnSave": false,
   "files": [],
-  "references": [
-    {
-      "path": "./packages/util"
-    },
-    {
-      "path": "./packages/myapp"
-    },
-    {
-      "path": "./packages/myapp-swc"
-    }
-  ]
+  "references": [{"path":"./libs/myapp-swc"},{"path":"./libs/myapp"},{"path":"./libs/util"}]
 }
