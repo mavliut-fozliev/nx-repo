@@ -1,6 +1,6 @@
 {
-  "name": "myapp-swc",
-  "sourceRoot": "packages/myapp-swc/src",
+  "name": "myapp",
+  "sourceRoot": "libs/myapp/src",
   "targets": {
     "serve": {
       "executor": "@nx/js:node",
@@ -8,20 +8,20 @@
       "dependsOn": ["build"],
       "configurations": {
         "development": {
-          "buildTarget": "myapp-swc:build:development"
+          "buildTarget": "myapp:build:development"
         },
         "production": {
-          "buildTarget": "myapp-swc:build:production"
+          "buildTarget": "myapp:build:production"
         }
       }
     },
     "build": {
-      "executor": "@nx/js:swc",
+      "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/myapp-swc",
-        "main": "packages/myapp-swc/src/index.ts",
-        "tsConfig": "packages/myapp-swc/tsconfig.lib.json"
+        "outputPath": "dist/libs/myapp",
+        "main": "libs/myapp/src/index.ts",
+        "tsConfig": "libs/myapp/tsconfig.lib.json"
       },
       "dependsOn": ["^build"]
     }
