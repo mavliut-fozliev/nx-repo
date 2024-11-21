@@ -14,12 +14,26 @@
     "nx": "20.1.2",
     "tslib": "^2.3.0",
     "typescript": "~5.5.2",
-    "typescript-transform-paths": "^3.5.2"
+    "typescript-transform-paths": "^3.5.2",
+    "verdaccio": "^5.0.4"
   },
   "workspaces": [
     "libs/*"
   ],
   "dependencies": {
     "chokidar": "^3.6.0"
+  },
+  "nx": {
+    "includedScripts": [],
+    "targets": {
+      "local-registry": {
+        "executor": "@nx/js:verdaccio",
+        "options": {
+          "port": 4873,
+          "config": ".verdaccio/config.yml",
+          "storage": "tmp/local-registry/storage"
+        }
+      }
+    }
   }
 }
